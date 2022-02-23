@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using JonSCardenasShop.Models;
 
 namespace JonSCardenasShop.Data
 {
@@ -12,5 +13,6 @@ namespace JonSCardenasShop.Data
             : base(options)
         {
         }
+        public DbSet<JonSCardenasShop.Models.Product> Product { get; set; }
     }
 }

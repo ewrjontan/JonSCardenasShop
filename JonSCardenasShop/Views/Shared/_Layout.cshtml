@@ -23,9 +23,28 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="SearchResults">Search</a>
+                        </li>
+
                     </ul>
+
+                    <!--check 41:36 on yt-->
+                    <form class="col-6" asp-action="ShowSearchResults">
+                        <div class="input-group">
+                            <input type="text" name="SearchPhrase" class="form-control" placeholder="Find a product" />
+                        
+                            <div class="input-group-append">
+                                <input type="submit" class="btn btn-outline-secondary form-control" value="Search" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </nav>
